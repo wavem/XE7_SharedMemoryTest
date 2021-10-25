@@ -75,13 +75,16 @@ class TFormMain : public TForm
 {
 __published:	// IDE-managed Components
 	TPanel *___pnBase;
-	TAdvMemo *memo;
 	TdxRibbonTab *RibbonMenuTab1;
 	TdxRibbon *RibbonMenu;
 	TdxBarManager *BarMgr;
 	TdxBar *BarMgrBar1;
 	TdxBarLargeButton *MenuBtn_1_Log;
 	TdxBarLargeButton *MenuBtn_2_Graph;
+	TNotebook *Notebook_Main;
+	TPanel *__pnBase_1_Log;
+	TAdvMemo *memo;
+	TPanel *__pnBase_2_Graph;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormMain(TComponent* Owner);

@@ -3,8 +3,8 @@ object FormMain: TFormMain
   Top = 0
   BorderStyle = bsDialog
   Caption = 'Shared Memory Test with ioplot'
-  ClientHeight = 703
-  ClientWidth = 1045
+  ClientHeight = 855
+  ClientWidth = 1415
   Color = clBtnFace
   DoubleBuffered = True
   Font.Charset = DEFAULT_CHARSET
@@ -19,8 +19,8 @@ object FormMain: TFormMain
   object ___pnBase: TPanel
     Left = 0
     Top = 124
-    Width = 1045
-    Height = 579
+    Width = 1415
+    Height = 731
     Align = alClient
     BevelOuter = bvNone
     Color = 2960685
@@ -30,14 +30,69 @@ object FormMain: TFormMain
     ExplicitTop = 0
     ExplicitWidth = 512
     ExplicitHeight = 185
+    object Notebook_Main: TNotebook
+      Left = 0
+      Top = 0
+      Width = 1082
+      Height = 731
+      Align = alLeft
+      PageIndex = 1
+      TabOrder = 0
+      object TPage
+        Left = 0
+        Top = 0
+        Caption = 'Log'
+        ExplicitWidth = 150
+        ExplicitHeight = 150
+        object __pnBase_1_Log: TPanel
+          Left = 0
+          Top = 0
+          Width = 1082
+          Height = 731
+          Align = alClient
+          BevelOuter = bvNone
+          Color = 2960685
+          ParentBackground = False
+          TabOrder = 0
+          ExplicitLeft = 48
+          ExplicitTop = 40
+          ExplicitWidth = 1045
+          ExplicitHeight = 150
+        end
+      end
+      object TPage
+        Left = 0
+        Top = 0
+        HelpContext = 1
+        Caption = 'Graph'
+        ExplicitWidth = 0
+        ExplicitHeight = 0
+        object __pnBase_2_Graph: TPanel
+          Left = 0
+          Top = 0
+          Width = 1082
+          Height = 731
+          Align = alClient
+          BevelOuter = bvNone
+          Color = 2960685
+          ParentBackground = False
+          TabOrder = 0
+          ExplicitLeft = 248
+          ExplicitTop = 232
+          ExplicitWidth = 185
+          ExplicitHeight = 41
+        end
+      end
+    end
     object memo: TAdvMemo
-      Left = 488
-      Top = 200
-      Width = 350
-      Height = 250
+      Left = 1088
+      Top = 0
+      Width = 327
+      Height = 731
       Cursor = crIBeam
       ActiveLineSettings.ShowActiveLine = False
       ActiveLineSettings.ShowActiveLineIndicator = False
+      Align = alRight
       AutoCompletion.Font.Charset = DEFAULT_CHARSET
       AutoCompletion.Font.Color = clWindowText
       AutoCompletion.Font.Height = -11
@@ -46,6 +101,7 @@ object FormMain: TFormMain
       AutoCompletion.StartToken = '(.'
       AutoCorrect.Active = True
       AutoHintParameterPosition = hpBelowCode
+      BkColor = 2960685
       BookmarkGlyph.Data = {
         36050000424D3605000000000000360400002800000010000000100000000100
         0800000000000001000000000000000000000001000000000000000000000000
@@ -97,15 +153,19 @@ object FormMain: TFormMain
       DelErase = True
       EnhancedHomeKey = False
       Gutter.Font.Charset = DEFAULT_CHARSET
-      Gutter.Font.Color = clWindowText
+      Gutter.Font.Color = clWhite
       Gutter.Font.Height = -13
       Gutter.Font.Name = 'Courier New'
       Gutter.Font.Style = []
+      Gutter.GutterColor = 2960685
+      Gutter.GutterColorTo = 2960685
+      Gutter.LineNumberStart = 0
+      Gutter.LineNumberTextColor = clWhite
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = clWhite
       Font.Height = -13
       Font.Name = 'COURIER NEW'
-      Font.Style = []
+      Font.Style = [fsBold]
       HiddenCaret = False
       Lines.Strings = (
         '')
@@ -119,13 +179,14 @@ object FormMain: TFormMain
       PrintOptions.MarginBottom = 0
       PrintOptions.PageNr = False
       PrintOptions.PrintLineNumbers = False
+      ReadOnly = True
       RightMarginColor = 14869218
       ScrollHint = False
       SelColor = clWhite
       SelBkColor = clNavy
       ShowRightMargin = True
       SmartTabs = False
-      TabOrder = 0
+      TabOrder = 1
       TabStop = True
       TrimTrailingSpaces = False
       UILanguage.ScrollHint = 'Row'
@@ -147,13 +208,14 @@ object FormMain: TFormMain
   object RibbonMenu: TdxRibbon
     Left = 0
     Top = 0
-    Width = 1045
+    Width = 1415
     Height = 124
     BarManager = BarMgr
     ColorSchemeName = 'DevExpressDarkStyle'
     Contexts = <>
     TabOrder = 1
     TabStop = False
+    ExplicitWidth = 1045
     object RibbonMenuTab1: TdxRibbonTab
       Active = True
       Caption = 'Menu'

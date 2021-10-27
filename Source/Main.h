@@ -85,6 +85,7 @@ __published:	// IDE-managed Components
 	TPanel *__pnBase_1_Log;
 	TAdvMemo *memo;
 	TPanel *__pnBase_2_Graph;
+	void __fastcall ClickMainButton(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFormMain(TComponent* Owner);

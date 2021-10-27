@@ -26,10 +26,6 @@ object FormMain: TFormMain
     Color = 2960685
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 523
-    ExplicitTop = 0
-    ExplicitWidth = 512
-    ExplicitHeight = 185
     object Notebook_Main: TNotebook
       Left = 0
       Top = 0
@@ -42,8 +38,6 @@ object FormMain: TFormMain
         Left = 0
         Top = 0
         Caption = 'Log'
-        ExplicitWidth = 150
-        ExplicitHeight = 150
         object __pnBase_1_Log: TPanel
           Left = 0
           Top = 0
@@ -54,10 +48,6 @@ object FormMain: TFormMain
           Color = 2960685
           ParentBackground = False
           TabOrder = 0
-          ExplicitLeft = 48
-          ExplicitTop = 40
-          ExplicitWidth = 1045
-          ExplicitHeight = 150
         end
       end
       object TPage
@@ -65,8 +55,6 @@ object FormMain: TFormMain
         Top = 0
         HelpContext = 1
         Caption = 'Graph'
-        ExplicitWidth = 0
-        ExplicitHeight = 0
         object __pnBase_2_Graph: TPanel
           Left = 0
           Top = 0
@@ -77,10 +65,6 @@ object FormMain: TFormMain
           Color = 2960685
           ParentBackground = False
           TabOrder = 0
-          ExplicitLeft = 248
-          ExplicitTop = 232
-          ExplicitWidth = 185
-          ExplicitHeight = 41
         end
       end
     end
@@ -171,7 +155,7 @@ object FormMain: TFormMain
         '')
       MarkerList.UseDefaultMarkerImageIndex = False
       MarkerList.DefaultMarkerImageIndex = -1
-      MarkerList.ImageTransparentColor = -1
+      MarkerList.ImageTransparentColor = 33554432
       OleDropTarget = []
       PrintOptions.MarginLeft = 0
       PrintOptions.MarginRight = 0
@@ -215,7 +199,6 @@ object FormMain: TFormMain
     Contexts = <>
     TabOrder = 1
     TabStop = False
-    ExplicitWidth = 1045
     object RibbonMenuTab1: TdxRibbonTab
       Active = True
       Caption = 'Menu'
@@ -276,6 +259,7 @@ object FormMain: TFormMain
       Category = 0
       Hint = 'Log'
       Visible = ivAlways
+      OnClick = ClickMainButton
       HotGlyph.Data = {
         36100000424D3610000000000000360000002800000020000000200000000100
         2000000000000010000000000000000000000000000000000000000000000000
@@ -415,6 +399,7 @@ object FormMain: TFormMain
       Category = 0
       Hint = 'Graph'
       Visible = ivAlways
+      OnClick = ClickMainButton
       HotGlyph.Data = {
         36100000424D3610000000000000360000002800000020000000200000000100
         2000000000000010000000000000000000000000000000000000000000000000

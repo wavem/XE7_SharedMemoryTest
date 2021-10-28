@@ -78,6 +78,12 @@ __fastcall TFormMain::TFormMain(TComponent* Owner)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TFormMain::FormClose(TObject *Sender, TCloseAction &Action)
+{
+	ExitProgram();
+}
+//---------------------------------------------------------------------------
+
 void __fastcall TFormMain::InitProgram() {
 
 	PrintMsg(L"Init Complete");
@@ -101,4 +107,3 @@ void __fastcall TFormMain::ClickMainButton(TObject *Sender)
     Notebook_Main->PageIndex = p_Btn->Tag;
 }
 //---------------------------------------------------------------------------
-
